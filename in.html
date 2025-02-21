@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proclamation Wall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('wall2.jpg') repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow-y: auto;
+            height: 100vh;
+        }
+        .navbar {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            font-family: Arial, sans-serif;
+        }
+        .stats-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+        .stats-container h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .stats-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .stats-box div {
+            background: linear-gradient(to right, #ff8c00, #ff0080);
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .wall {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .proclamation {
+            background: #5a3e1b;
+            width: 180px;
+            height: 260px;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            border: 8px solid #3b2710;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+            font-family: 'Old Standard TT', serif;
+        }
+        .proclamation h2 {
+            font-size: 16px;
+            margin: 0;
+            padding: 5px;
+            background: rgba(0,0,0,0.7);
+            color: #f4d47c;
+        }
+        .proclamation p {
+            font-size: 12px;
+            background: rgba(255,255,255,0.9);
+            padding: 8px;
+            color: #333;
+            font-style: italic;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Rules</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="stats-container">
+        <h2>Hacknovate 5.0 Glimpse</h2>
+        <div class="stats-box">
+            <div>Registration: 5000+</div>
+            <div>Hackers: 800+</div>
+            <div>Teams: 200+</div>
+            <div>Projects: 150+</div>
+            <div>50k+ accounts reached</div>
+            <div>1.5 lakhs+ views on reels</div>
+            <div>3.5 lakhs+ reach on website</div>
+            <div>4635 Likes</div>
+        </div>
+    </div>
+    <div class="wall">
+        <div class="proclamation"><h2>PROCLAMATION No. 1</h2><p>Rule 1 must be followed.</p></div>
+        <div class="proclamation"><h2>PROCLAMATION No. 2</h2><p>Rule 2 must be followed.</p></div>
+        <div class="proclamation"><h2>PROCLAMATION No. 3</h2><p>Rule 3 must be followed.</p></div>
+    </div>
+</body>
+</html>
